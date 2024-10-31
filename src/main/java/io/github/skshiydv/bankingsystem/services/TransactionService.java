@@ -1,6 +1,4 @@
 package io.github.skshiydv.bankingsystem.services;
-
-import io.github.skshiydv.bankingsystem.Entity.BankAccount;
 import io.github.skshiydv.bankingsystem.Entity.Transaction;
 import io.github.skshiydv.bankingsystem.Entity.User;
 import io.github.skshiydv.bankingsystem.Repositories.AccountRepository;
@@ -12,9 +10,8 @@ import org.springframework.security.core.Authentication;
 import org.springframework.security.core.context.SecurityContextHolder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
-
 import java.time.LocalDateTime;
-import java.util.UUID;
+
 
 @Service
 @RequiredArgsConstructor

@@ -22,7 +22,6 @@ public class Transaction {
 
     @NonNull
     private String receiver;
-
     @NonNull
     private double amount;
 

@@ -3,8 +3,6 @@ package io.github.skshiydv.bankingsystem.controllers;
 import io.github.skshiydv.bankingsystem.Entity.BankAccount;
 import io.github.skshiydv.bankingsystem.Entity.Transaction;
 import io.github.skshiydv.bankingsystem.Entity.User;
-import io.github.skshiydv.bankingsystem.Repositories.AccountRepository;
-import io.github.skshiydv.bankingsystem.Repositories.TransactionRepository;
 import io.github.skshiydv.bankingsystem.Repositories.UserRepository;
 import io.github.skshiydv.bankingsystem.services.TransactionService;
 import io.github.skshiydv.bankingsystem.services.accountService;
@@ -20,8 +18,6 @@ import org.springframework.web.bind.annotation.*;
 @RequestMapping("/user/account")
 public class UserAccountController {
     private final UserRepository userRepository;
-    private final AccountRepository accountRepository;
-    private final TransactionRepository transactionRepository;
     private final TransactionService transactionService;
     private final accountService service;
     @GetMapping("/get-account")
